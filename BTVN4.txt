@@ -1,0 +1,16 @@
+-------------Perdictive Analytics-------------
+Tập Dữ Liệu: Breast Cancer 
+Phân tích phương sai ANOVA
+1. Nhóm được tạo cho cột Mitoses có tác động thực sự đến khả năng khối u là ác tính hay không
+- Ta sử dụng 2 biến: Hạng(Class) (có 2 loại: 0: Lành tính(benign), 1: Ác tính(Malignant)) và biến ước
+lượng Mitoses (Định lượng)
+-Kết quả:Phân tích ANOVA cho thấy p<=9.68e-32
++ Chúng ta có thể thấy rằng bắt đầu từ Mitoses là 2, tỷ lệ khối u lành tính và ác tính dường như vẫn gần nhau.
+Do đó,có thể nhóm các giá trị này để làm cho thông tin đơn giản hơn, giúp giảm nguy cơ trang bị quá mức hoặc
+ảnh hưởng của các giá trị ngoại lai ở các cực, do đó làm cho các mô hình tương lai tốt hơn cho việc tổng quát hóa.
++ Với giá trị p<=9.68e-32 rất nhỏ, chúng ta có thể bác bỏ giả thuyết vô hiệu, xác nhận phát hiện của trên rằng nhóm được
+tạo cho cột Mitoses có tác động thực sự đến khả năng khối u là ác tính. Cụ thể, chúng ta thấy rằng cơ hội xuất hiện
+khối u ác tính cho các giá trị của Mitoses bằng 2 (hoặc nhiều hơn) lớn hơn cơ hội cho giá trị 1.
+hình:
+
+

@@ -1,0 +1,32 @@
+-------------Perdictive Analytics-------------
+Tập Dữ Liệu: Breast Cancer
+- Hôm nay Covid đã đến Hồ Chí Minh, Covid có thể ảnh hưởng đến nhiều thứ. Cũng như có nhiều
+tác nhân từ Covid mà bị ảnh hưởng như tiền, tính mạng, v.v.Nào sao chúng ta không thử với tập dữ liệu Breast Cancer
+xem sao nếu có thêm một tác nhân vào thì có cái nào đó tác động đến nó.
+1. Vậy, có thể nào malignant nặng có liên quan đến việc gia tăng số lượng các  phân bào nguyên 
+nhiễm phụ thuộc vào Mitoses(Nguyên Phân) không?
+ Ta có thể thấy rằng các phân bào nguyên phân có liên quan đến loại của nó vậy nếu thêm một yếu tố khác chẳng hạn
+là Clump Thickness(độ dày cụm) thì nó sẽ có ảnh hưởng đến việc gia tăng sô lượng các phân bào nguyên phân trên Class
+hay không?
+Để đánh giá rằng nó có đúng hay không ta thêm Clump Thickness vào mô hình
+Code:hình
+kết quả:hình
+Giải thích:Kiểm tra các giá trị p và ước lượng tham số cho mỗi biến, Class và Clump Thickness, Mitoses(Nguyên Phân). 
+Như bạn thấy cả hai giá trị P đều nhỏ hơn 0,05. Và cả hai ước tính tham số đều dương. Điều này chỉ ra rằng độ dày cụm(Clump Thickness)
+và Các nguyên phân (Mitoses) có liên quan đến việc malignant nặng hoặt nhẹ làm gia tăng số lượng các phân bào nguyên.
+Do đó ta có thể kết luận rằng malignant nặng có liên quan đến việc gia tăng số lượng các  phân bào nguyên 
+nhiễm phụ thuộc vào Mitoses(Nguyên Phân)
+
+2. Vẫn như câu trên từ mô hình trên ta sẽ tìm ra mô hình hồi quy đa thức cho nó ta sẽ tạo mô hình hồi quy đa thức 
+từ 2 biến là Uniformity of Cell Size (Tính đồng nhất kích thước ô), Uniformity of Cell Shape(Tính đồng nhất của hình dạng tế bào)
+và biến phân loại là Class(Hạng,Loại)
+Code:hình
+Phương trình kết quả:
+Output = 0.5225*Class + 0.1580 - 0.0191 + 0.0467
+Giải thích:Kiểm tra các giá trị p và ước lượng tham số mỗi biến, ta thấy Tính đồng nhất kích thước ô hay là tính đồng nhất hình
+dạng tế bào cả hai giá trị p đều nhỏ hơn 0.05.Các ước tính tham số đều dương chỉ có bậc 2 của tính đồng nhất kích thước ô là âm 
+Do đó ta có thể kết luận rằng mô hình mới được tạo ra nó có tác động đến biến phân loại là Class
+ 
+
+
+

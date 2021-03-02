@@ -1,0 +1,36 @@
+-------------Perdictive Analytics-------------
+Tập Dữ Liệu: Breast Cancer
+Phân tích phương sai ANOVA
+Hôm nay, tôi phân tích dữ liệu cho tập dữ liệu Breast Cancer  để tìm hiểu các vấn đề sau:
+
+1. Mô hình hồi quy hai biến định lượng, xem xét mối quan hệ tuyết tính giữa các biến Uniformity of Cell Size(tính
+đồng nhất của kích thước ô) và Uniformity of Cell Shape(tính đồng nhất của hình dạng tế bào), trong đó ta có biến
+Uniformity of Cell Size tương ứng từ 1 - 10 là một biến phản hồi định lượng và  Uniformity of Cell Shape tương 
+ứng 1 - 10 cũng là một biến phản hồi định lượng. Câu hỏi liên quan mối liên hệ giữa kích thước ô và hình dạng 
+của tế bào?
+code trong hình:
+Phương trình thu được:
+mối liên hệ =0.9068819130525947  + có 8.388647422514135e-264
+
+Như vậy, giữa kích thước ô tính đồng nhất sẽ có  sẽ có 0.9068819130525947 và tính đồng nhất hình dạng tế bào 
+có 8.388647422514135e-264 
+Biểu đồ tương ứng sẽ cho chúng ta thấy một cách trực quan hơn
+
+
+2. Xem xét mối quan hệ tuyến tính giữa Class(Hạng loại) và số lượng các triệu chứng phụ thuộc
+vào Mitosis(Nguyên Phân), trong đó Class chính là một biến số giải thích phân loại nhị phân (benign hoặc
+malignant) và số lượng các triệu chứng phụ thuộc Mitosis , từ 1 đến 10, là một biến phản hồi
+định lượng. Câu hỏi nghiên cứu của tôi chính là, malignant nặng có liên quan đến việc gia
+tăng số lượng các  phân bào nguyên nhiễm phụ thuộc vào Mitoses(Nguyên Phân) không?
+code trong hình:
+Phương trình thu được:
+Số lương phân bào = 1.063319 + 2.589212*Class(Hạng,loại)
+Chúng ta biết rằng biến Class nhận giá trị bằng 2 nếu tế bào đó lành tính 
+và giá trị là 4 nếu tế bào đó bị ác tính. Vì vậy, ta có thể thay các giá trị 2 và 4 vào biến
+số Class để có được số lượng phân bào nguyên phân phụ thuộc Mitoses dự kiến cho mỗi nhóm: 
+• Lành tính: Số triệu chứng = 1.063319 + 2.589212 * 2 = 6,241743
+• Ác tính: Số triệu chứng = 1.063319 + 2.589212 * 4 = 11,420167
+Như vậy, số lượng phân bào nguyên phân lành tính là 6,241743  phụ
+thuộc Mitoses và số lượng phân bào nguyên phân ác tính có 11,420167 phụ
+thuộc Mitoses.
+Biểu đồ tương ứng sẽ cho chúng ta thấy một cách trực quan hơn

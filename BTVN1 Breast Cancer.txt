@@ -1,0 +1,33 @@
+-------------Perdictive Analytics-------------
+
+Tập Dữ Liệu: Breast Cancer
+
+Trích: This breast cancer databases was obtained from the University of Wisconsin
+Hospitals, Madison from Dr. William H. Wolberg.
+
+Mở Đầu:Ung thư vú là nguyên nhân thứ hai gây tử vong do ung thư ở phụ nữ tại Hoa Kỳ,chỉ đứng sau ung thư phổi.
+Trong thập kỉ qua số lượng bị cũng đã giảm đáng kể.Tuy nhiên điều quan trọng là phải tiếp tục thực hiện các 
+tiến bộ trong cách thức chẩn đoán để phát hiện bệnh sớm giúp nâng cơ hội sống sót cho các bệnh nhân.
+
+Chủ Đề Quan Tâm Thứ 1: Multisurface method of pattern separation for medical diagnosis applied to breast cytology 
+
+Câu hỏi liên quan 1: How important multisurface pattern is?
+(Sự tách mô thành nhiều mặt ảnh hưởng đến chuẩn đoán Ung thư như thế nào?) 
+TL: this method has been  providing both patient and doctor an opportunity to further progress of technology for cancer 
+treatment.(Phương pháp này đã mang lại cho bác sĩ và bệnh nhân có thêm cơ hội để tiến bộ hơn trong công nghệ điều trị
+Ung thư)
+
+Chủ Đề Quan Tâm Thứ 2: Cancer diagnosis via linear programming
+
+Câu hỏi liên quan 2: how can techniques help doctor predicting patients'illness?
+(Làm thế nào để dùng các kỹ thuật có thế giúp bác sĩ dự đoán bệnh của bệnh nhân)
+TL: utilizes characteristics of individual cells obtained from a minimally invasive fine needle aspirate, to discriminate
+benign from malignant breast lumps
+(Dùng các đặc điểm của các tế bào riêng lẻ, thu được từ hút kim nhỏ xâm lấn tối thiểu, để phân biệt được lành tính và u ác
+tính có ở vú)
+Giả thuyết liên quan: Is there any way for doctors to predict the diagnosis without technique?
+(Có cách nào khác để bác sĩ chuẩn đoán mà không cần dùng kỹ thuật không? )
+TL: Tỉ lệ rất thấp, một bác sĩ chuyên khoa có thể tham gia chuẩn đoán như vậy cho bệnh nhân và tỉ lệ xác xuất rất thấp, và
+nguy cơ sai sót rất cao
+
+

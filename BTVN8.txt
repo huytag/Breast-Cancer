@@ -1,0 +1,33 @@
+-------------Perdictive Analytics-------------
+Tập Dữ Liệu: Breast Cancer
+-Hồi quy logistic 
+hôm nay ở Tân Phú, Hồ Chí Minh, trời không mưa ngày có nắng nhiệt độ vào khoảng 33C khả năng có mưa khoảng 20%
+cùng tiếp đến chủ đề Breast Cancer tuần trước hôm nay ta sẽ phân thích về mô hình hồi quy logistic
+
+- 2 Biến chọn là: Class(Hạng,loại) và biến Clump Thinkness(Độ dày cụm)
++ Biến giải thích là Clump Thinkness Độ dày cụm
++ Biên phản hồi là Class 
+Lý do chọn 2 biến là: liệu rằng đồ dày cụm tập trung từ 1-10 thì các mức độ phân bố từ 1 - 10 có liên quan đến 
+kết quả cho ra là Lành tính hay Ác tính không.
+- Tìm mô hình logistic
++ Code: hình.
+- Kết quả: hình.
++ Giải thích: dựa vào kết quả trên ta có thể thấy số p < 0.05 điều này nói lên rằng hai biến này có liên quan đến
+nhau độ dày cụm từ 1 - 10 sẽ liên quan đến kết quả là lành tính hay ác tính.
+- Đánh giá mô hình.
++ Code: hình.
++ kết quả: ta tạo ta được confution matrix như sau:  
+[[140   3]
+ [ 19  48]]
+và ta có độ chính xác, Test accuracy =  0.8952380952380953
+Điều này cho ta thấy mô hình có độ chính xác dựa vào 2 biên rất cao chứng tỏ rằng độ dày cụm có liên quan đến việc
+phân loại là Lành tính hay Ác tính 
+
+
+
+
+
+
+
+
+
